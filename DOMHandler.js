@@ -1,3 +1,5 @@
+var english = document.getElementById("english").innerHTML;
+
 var selecetedLanguage;
 
 var languageChooser = document.getElementById("translate");
@@ -16,6 +18,7 @@ languageChooser.addEventListener("click",function(event){
             output((DOMHandler.japaneseTran()));
         }
 	console.log(selecetedLanguage);
+	console.log(english);
 });
 
 function output(outputLanguage){
