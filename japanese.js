@@ -24,5 +24,3 @@ var DOMHandler = (function(newLanguage){
 
 })(DOMHandler || {});
 
-
-console.log(DOMHandler.japaneseTrans());
