@@ -6,17 +6,18 @@ var languageChooser = document.getElementById("translate");
 
 
 languageChooser.addEventListener("click",function(event){
-	selecetedLanguage = document.getElementById("language").value;
-        if(selecetedLanguage === "Spanish") {
+	selectedLanguage = document.getElementById("language").value;
+        if(selectedLanguage === "Spanish") {
             output((DOMHandler.engToSpanish()));
-        } else if (selecetedLanguage === "Latin") {
+        } else if (selectedLanguage === "Latin") {
             output((DOMHandler.engToLatin()));
-        } else if (selecetedLanguage === "Dutch") {
+        } else if (selectedLanguage === "Dutch") {
             output((DOMHandler.convertDutch()));
         } else {
             output((DOMHandler.japaneseTran()));
         }
-	console.log(selecetedLanguage);
+	console.log(selectedLanguage);
+	console.log(english);
 });
 
 function output(outputLanguage){
