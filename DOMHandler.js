@@ -1,8 +1,9 @@
-var selecetedLanguage;
+var english = document.getElementById("english").innerHTML;
+
+var selectedLanguage;
 
 var languageChooser = document.getElementById("translate");
 
-var english = document.getElementById("english").innerHTML;
 
 languageChooser.addEventListener("click",function(event){
 	selecetedLanguage = document.getElementById("language").value;
