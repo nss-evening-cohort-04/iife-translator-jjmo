@@ -2,6 +2,8 @@ var english = document.getElementById("english").innerHTML;
 
 var selecetedLanguage;
 
+var english = document.getElementById("english").innerHTML;
+
 var languageChooser = document.getElementById("translate");
 
 var english = document.getElementById("english").innerHTML;
