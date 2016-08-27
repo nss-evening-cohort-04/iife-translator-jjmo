@@ -1,11 +1,26 @@
-var selecetedLanguage;
+var english = document.getElementById("english").innerHTML;
+
+var selectedLanguage;
+
+var english = document.getElementById("english").innerHTML;
 
 var languageChooser = document.getElementById("translate");
 
+var english = document.getElementById("english").innerHTML;
+
 languageChooser.addEventListener("click",function(event){
-	selecetedLanguage = document.getElementById("language").value;
-	console.log(selecetedLanguage);
-  console.log(english)
+	selectedLanguage = document.getElementById("language").value;
+        if(selectedLanguage === "Spanish") {
+            output((DOMHandler.engToSpanish()));
+        } else if (selectedLanguage === "Latin") {
+            output((DOMHandler.engToLatin()));
+        } else if (selectedLanguage === "Dutch") {
+            output((DOMHandler.convertDutch()));
+        } else {
+            output((DOMHandler.japaneseTran()));
+        }
+	console.log(selectedLanguage);
+	console.log(english);
 });
 
 function output(outputLanguage){
