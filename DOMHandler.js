@@ -17,7 +17,7 @@ languageChooser.addEventListener("click",function(event){
         } else if (selectedLanguage === "Dutch") {
             output((DOMHandler.convertDutch()));
         } else {
-            output((DOMHandler.japaneseTran()));
+            output((DOMHandler.japaneseTrans()));
         }
 	console.log(selectedLanguage);
 	console.log(english);
