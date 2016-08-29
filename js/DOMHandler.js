@@ -7,18 +7,16 @@ var languageChooser = document.getElementById("translate");
 languageChooser.addEventListener("click",function(event){
 	selectedLanguage = document.getElementById("language").value;
         if(selectedLanguage === "Spanish") {
-            output((DOMHandler.engToSpanish()));
+            output((DOMHandler.translateToSpanish()));
         } else if (selectedLanguage === "Latin") {
-            output((DOMHandler.engToLatin()));
+            output((DOMHandler.translateToLatin()));
         } else if (selectedLanguage === "Dutch") {
-            output((DOMHandler.convertDutch()));
+            output((DOMHandler.translateToDutch()));
         } else {
-            output((DOMHandler.japaneseTrans()));
+            output((DOMHandler.translateToJapanese()));
         }
-	console.log(selectedLanguage);
-	console.log(english);
 });
 
 function output(outputLanguage){
-	document.getElementById("output").value = outputLanguage;
+	document.getElementById("output").innerHTML = outputLanguage;
 }

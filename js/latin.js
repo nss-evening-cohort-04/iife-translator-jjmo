@@ -3,18 +3,18 @@ var DOMHandler = (function(latin) {
   latin.getLatinTranslated = function() {
     return latinTranslated;
   },
-  latin.engToLatin = function () {
-    english = english.split(" ");
+  latin.translateToLatin = function () {
+    englishTranslation = english.split(" ");
 
     var latinTrans = "";
     var latinTemp = latin.getLatinTranslated();
 
     for (var i = 0; i < english.length; i++) {
-      if (english[i] in latinTemp) {
-        if (latinTemp[english[i]] === " ") {
+      if (englishTranslation[i] in latinTemp) {
+        if (latinTemp[englishTranslation[i]] === " ") {
 
           } else {
-          latinTrans += latinTemp[english[i]] + " ";
+            latinTrans += latinTemp[englishTranslation[i]] + " ";
         }
       }
     }

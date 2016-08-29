@@ -2,13 +2,13 @@
 var DOMHandler = (function(spanish) {
 
   // Private variable to store the different meat prices
-  var spanishTranslated = {"Where": "dónde", "is": "está", "the": "el", "bathroom?": "baño"};
+  var spanishTranslated = {"Where": "dónde", "is": "está", "the": "el", "bathroom?": "baño?"};
 
   // Augment the original object with another method
   spanish.getSpanishTranslated = function() {
     return spanishTranslated;
   },
-  spanish.engToSpanish = function() {
+  spanish.translateToSpanish = function() {
     var englishTrans = english.split(" ");
 
     var spanishTrans = "";
