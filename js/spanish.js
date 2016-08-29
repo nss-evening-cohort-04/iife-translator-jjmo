@@ -2,21 +2,21 @@
 var DOMHandler = (function(spanish) {
 
   // Private variable to store the different meat prices
-  var spanishTranslated = {"Where": "dónde", "is": "está", "the": "el", "bathroom?": "baño"};
+  var spanishTranslated = {"Where": "dónde", "is": "está", "the": "el", "bathroom?": "baño?"};
 
   // Augment the original object with another method
   spanish.getSpanishTranslated = function() {
     return spanishTranslated;
   },
-  spanish.engToSpanish = function() {
-    english = english.split(" ");
+  spanish.translateToSpanish = function() {
+    var englishTrans = english.split(" ");
 
     var spanishTrans = "";
     var spanTemp = spanish.getSpanishTranslated();
 
     for(var i = 0; i < english.length; i++) {
-      if(english[i] in spanTemp) {
-        spanishTrans += spanTemp[english[i]] + " ";
+      if(englishTrans[i] in spanTemp) {
+        spanishTrans += spanTemp[englishTrans[i]] + " ";
       }
     }
     return spanishTrans;

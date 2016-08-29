@@ -3,31 +3,30 @@
 <head>
 	<title>JJMO-Translator</title>
 </head>
-<link rel="stylesheet" type="text/css" href="styles.css">
+<link rel="stylesheet" type="text/css" href="css/styles.css">
 <body>
-
-<p id="english">Where is the bathroom?</p>
-<div>
-	<select id="language" name="" multiple>
-		<option value="Spanish">Spanish</option>
-		<option value="Latin">Latin</option>
-		<option value="Dutch">Dutch</option>
-		<option value="Japanese">Japanese</option>
-	</select>
-</div>
-<div>
-	<button id="translate">Translate</button>
-</div>
-<div>
-	<input id="output" type="textarea" name="" value="" placeholder="Output">
-</div>
-
-<script type="text/javascript" src="DOMHandler.js"></script>
-<script type="text/javascript" src="spanish.js"></script>
-<script type="text/javascript" src="latin.js"></script>
-<script type="text/javascript" src="dutch.js"></script>
-<script type="text/javascript" src="japanese.js"></script>
-<script type="text/javascript" src="dutch.js"></script>
-<script type="text/javascript" src="translator.js"></script>
+    <div class="content">
+        <p id="english">Where is the bathroom?</p>
+        <div>
+        	<select id="language" name="">
+        		<option value="Spanish">Spanish</option>
+        		<option value="Latin">Latin</option>
+        		<option value="Dutch">Dutch</option>
+        		<option value="Japanese">Japanese</option>
+        	</select>
+        </div>
+        <div>
+        	<button id="translate">Translate</button>
+        </div>
+        <div>
+        	<p id="output"></p>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/DOMHandler.js"></script>
+    <script type="text/javascript" src="js/spanish.js"></script>
+    <script type="text/javascript" src="js/latin.js"></script>
+    <script type="text/javascript" src="js/dutch.js"></script>
+    <script type="text/javascript" src="js/japanese.js"></script>
+    <script type="text/javascript" src="js/dutch.js"></script>
 </body>
 </html>
