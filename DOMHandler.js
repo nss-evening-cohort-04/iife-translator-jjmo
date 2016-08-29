@@ -4,7 +4,6 @@ var selectedLanguage;
 
 var languageChooser = document.getElementById("translate");
 
-
 languageChooser.addEventListener("click",function(event){
 	selectedLanguage = document.getElementById("language").value;
         if(selectedLanguage === "Spanish") {
@@ -14,7 +13,7 @@ languageChooser.addEventListener("click",function(event){
         } else if (selectedLanguage === "Dutch") {
             output((DOMHandler.convertDutch()));
         } else {
-            output((DOMHandler.japaneseTran()));
+            output((DOMHandler.japaneseTrans()));
         }
 	console.log(selectedLanguage);
 	console.log(english);

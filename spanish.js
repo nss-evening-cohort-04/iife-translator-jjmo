@@ -9,14 +9,14 @@ var DOMHandler = (function(spanish) {
     return spanishTranslated;
   },
   spanish.engToSpanish = function() {
-    english = english.split(" ");
+    var englishTrans = english.split(" ");
 
     var spanishTrans = "";
     var spanTemp = spanish.getSpanishTranslated();
 
     for(var i = 0; i < english.length; i++) {
-      if(english[i] in spanTemp) {
-        spanishTrans += spanTemp[english[i]] + " ";
+      if(englishTrans[i] in spanTemp) {
+        spanishTrans += spanTemp[englishTrans[i]] + " ";
       }
     }
     return spanishTrans;
