@@ -11,7 +11,7 @@ http-server -p 9898
 Then navigate to [here](http://localhost:9898) in your browser.
 
 ## Contributors
-- [Justin Leggit](https://github.com/justinal64)
+- [Justin Leggett](https://github.com/justinal64)
 - [Marcus Gill](https://github.com/jmarcusgill)
 - [Owen Herndon](https://github.com/owenherndon)
 - [Jessica Kilby](https://github.com/jessicakilby)
